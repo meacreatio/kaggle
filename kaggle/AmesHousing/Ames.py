@@ -6,7 +6,8 @@ from sklearn.metrics import accuracy_score
 from kaggle.Utils.UtilsDataFrame import delete_column
 from kaggle.Utils.UtilsDataFrame import print_na_count
 from kaggle.Utils.UtilsDataFrame import remove_header
-# from fancyimpute import SoftImpute
+
+from fancyimpute import MICE
 
 
 df_train = pd.read_csv("train.csv", delimiter=",")
@@ -29,6 +30,10 @@ for c in char_cols:
     # data_csv_test[c] = pd.factorize(data_csv_test[c])[0]
 
 # TODO impute missing values
+df_train.to_csv("before.csv")
+df_train = MICE().complete(df_train)
+df_train = pd.DataFrame(df_train)
+df_train.to_csv("temp.csv")
 
 numColumns = len(df_train.columns)
 dataset = df_train.values
