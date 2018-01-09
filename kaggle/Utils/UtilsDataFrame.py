@@ -10,3 +10,7 @@ def print_na_count(df):
         total_na = df[column].isnull().sum()
         if total_na > 0:
             print("%s -> %s" % (column, total_na))
+
+
+def remove_header(df):
+    df.columns = range(df.shape[1])
