@@ -4,5 +4,11 @@ from xgboost import XGBClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
-dataset = pandas.read_csv("train.csv", delimiter=",")
-print(dataset)
+data_csv = read_csv("train.csv", delimiter=",", header=None)
+numColumns = len(data_csv.columns)
+dataset = data_csv.values
+explanatory = dataset[:, 0:numColumns - 1]
+response = dataset[:, numColumns - 1]
+print(explanatory)
+
+# split into explanatory and response
