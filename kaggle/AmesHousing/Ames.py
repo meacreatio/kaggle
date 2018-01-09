@@ -31,6 +31,7 @@ for c in char_cols:
 df_train = MICE().complete(df_train)
 df_train = pd.DataFrame(df_train)
 
+# TODO normalize data
 numColumns = len(df_train.columns)
 dataset = df_train.values
 
