@@ -26,20 +26,18 @@ remove_header(df_train)
 # factorize categorical values
 char_cols = df_train.dtypes.pipe(lambda x: x[x == 'object']).index
 for c in char_cols:
-    df_train[c] = pd.factorize(df_train[c])[0]
+    df_train[c] = df_train[c].astype('category')
+    df_train[c] = df_train[c].cat.codes
     # data_csv_test[c] = pd.factorize(data_csv_test[c])[0]
 
-# TODO impute missing values
-df_train.to_csv("before.csv")
 df_train = MICE().complete(df_train)
 df_train = pd.DataFrame(df_train)
-df_train.to_csv("temp.csv")
 
 numColumns = len(df_train.columns)
 dataset = df_train.values
 
 explanatory = dataset[:, 0:numColumns - 1]
 response = dataset[:, numColumns - 1]
-print(explanatory)
+print(response)
 
 

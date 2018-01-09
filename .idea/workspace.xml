@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c210dca7-2208-4f2b-8f75-40505daaebed" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kaggle/AmesHousing/.~lock.train.csv#" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kaggle/AmesHousing/Ames.py" afterPath="$PROJECT_DIR$/kaggle/AmesHousing/Ames.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file leaf-file-name="Ames.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kaggle/AmesHousing/Ames.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="28" />
+            <state relative-caret-position="242">
+              <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="39" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -168,7 +169,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24079755" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25940338" sideWeight="0.49079755" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25940338" sideWeight="0.5092025" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25940338" sideWeight="0.5092025" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -215,8 +216,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kaggle/AmesHousing/Ames.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="28" />
+        <state relative-caret-position="242">
+          <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="39" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
