@@ -7,12 +7,17 @@ from kaggle.Utils.UtilsDataFrame import delete_column
 from kaggle.Utils.UtilsDataFrame import print_na_count
 # from fancyimpute import SoftImpute
 
-data_csv = pd.read_csv("train.csv", delimiter=",")
-# TODO delete columns with large amount of NA's
-print_na_count(data_csv)
-delete_column(data_csv, 'Alley')
+df_train = pd.read_csv("train.csv", delimiter=",")
 
-print(data_csv.head())
+# delete columns with large amounts of missing data
+delete_column(df_train, 'Alley')
+delete_column(df_train, 'FireplaceQu')
+delete_column(df_train, 'PoolQC')
+delete_column(df_train, 'Fence')
+delete_column(df_train, 'MiscFeature')
+
+# print_na_count(df_train)
+# print(df_train.head())
 
 # TODO correctly arrange train and test data
 # TODO one hot encode data
@@ -23,8 +28,8 @@ data_csv_test = pd.read_csv("test.csv", delimiter=",")
 #     data_csv[c] = pd.factorize(data_csv[c])[0]
 #     data_csv_test[c] = pd.factorize(data_csv_test[c])[0]
 
-numColumns = len(data_csv.columns)
-dataset = data_csv.values
+numColumns = len(df_train.columns)
+dataset = df_train.values
 explanatory = dataset[:, 0:numColumns - 1]
 response = dataset[:, numColumns - 1]
 # print(response)
