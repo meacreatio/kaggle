@@ -5,11 +5,14 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 from kaggle.Utils.UtilsDataFrame import delete_column
+from kaggle.Utils.UtilsDataFrame import print_na_count
+
 
 # from fancyimpute import SoftImpute
 
 data_csv = pd.read_csv("train.csv", delimiter=",")
 # TODO delete columns with large amount of NA's
+print_na_count(data_csv)
 delete_column(data_csv, 'Alley')
 
 print(data_csv.head())
