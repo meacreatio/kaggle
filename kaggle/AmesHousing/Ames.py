@@ -22,15 +22,13 @@ delete_column(df_train, 'MiscFeature')
 # remove headers
 remove_header(df_train)
 
-# TODO one hot encode data
+# factorize categorical values
+char_cols = df_train.dtypes.pipe(lambda x: x[x == 'object']).index
+for c in char_cols:
+    df_train[c] = pd.factorize(df_train[c])[0]
+    # data_csv_test[c] = pd.factorize(data_csv_test[c])[0]
 
-# TODO correctly arrange train and test data
-
-data_csv_test = pd.read_csv("test.csv", delimiter=",")
-# char_cols = data_csv.dtypes.pipe(lambda x: x[x == 'object']).index
-# for c in char_cols:
-#     data_csv[c] = pd.factorize(data_csv[c])[0]
-#     data_csv_test[c] = pd.factorize(data_csv_test[c])[0]
+# TODO impute missing values
 
 numColumns = len(df_train.columns)
 dataset = df_train.values
