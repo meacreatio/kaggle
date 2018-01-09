@@ -1,5 +1,5 @@
 from numpy import loadtxt
-import pandas
+from pandas import read_csv
 from xgboost import XGBClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
