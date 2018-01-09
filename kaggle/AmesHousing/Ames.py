@@ -26,9 +26,7 @@ remove_header(df_train)
 # factorize categorical values
 char_cols = df_train.dtypes.pipe(lambda x: x[x == 'object']).index
 for c in char_cols:
-    df_train[c] = df_train[c].astype('category')
-    df_train[c] = df_train[c].cat.codes
-    # data_csv_test[c] = pd.factorize(data_csv_test[c])[0]
+    df_train[c] = pd.factorize(df_train[c])[0]
 
 df_train = MICE().complete(df_train)
 df_train = pd.DataFrame(df_train)
