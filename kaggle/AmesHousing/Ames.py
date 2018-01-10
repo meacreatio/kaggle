@@ -30,13 +30,29 @@ for c in char_cols:
 
 df_train = MICE().complete(df_train)
 df_train = pd.DataFrame(df_train)
-
+# TODO compare factorize to LabelEncoder to One Hot Encoding
 # TODO normalize data
 numColumns = len(df_train.columns)
 dataset = df_train.values
 
 explanatory = dataset[:, 0:numColumns - 1]
 response = dataset[:, numColumns - 1]
-print(response)
+# print(response)
+
+# test / train sets
+seed = 7
+test_size = 0.33
+X_train, X_test, y_train, y_test = train_test_split(explanatory, response, test_size=test_size, random_state=seed)
+
+model = XGBClassifier()
+eval_set = [(X_test, y_test)]
+model.fit(X_train, y_train, eval_metric="error", eval_set=eval_set, verbose=True)
+# print(model)
+
+y_pred = model.predict(X_test)
+predictions = [round(value) for value in y_pred]
+accuracy = accuracy_score(y_test, predictions)
+print("Accuracy: %.2f%%" % (accuracy * 100.0))
+
 
 
