@@ -30,6 +30,7 @@ for c in char_cols:
 
 df_train = MICE().complete(df_train)
 df_train = pd.DataFrame(df_train)
+df_train.to_csv("complete.csv")
 # TODO compare factorize to LabelEncoder to One Hot Encoding
 # TODO normalize data
 numColumns = len(df_train.columns)
