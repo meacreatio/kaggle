@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c210dca7-2208-4f2b-8f75-40505daaebed" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kaggle/AmesHousing/Ames.py" afterPath="$PROJECT_DIR$/kaggle/AmesHousing/Ames.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="Ames.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kaggle/AmesHousing/Ames.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="49" selection-end-column="81" />
+            <state relative-caret-position="161">
+              <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -58,8 +57,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/kaggle/Utils/UtilsDataFrame.py" />
-        <option value="$PROJECT_DIR$/kaggle/AmesHousing/Ames.py" />
         <option value="$USER_HOME$/Dropbox/deep_learning_bundle/deep_learning_with_python/code/chapter_12/boston_standardized_larger.py" />
+        <option value="$PROJECT_DIR$/kaggle/AmesHousing/Ames.py" />
       </list>
     </option>
   </component>
@@ -470,8 +469,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kaggle/AmesHousing/Ames.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="49" selection-end-column="81" />
+        <state relative-caret-position="161">
+          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>

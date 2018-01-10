@@ -33,6 +33,7 @@ df_train = pd.DataFrame(df_train)
 df_train.to_csv("complete.csv")
 # TODO compare factorize to LabelEncoder to One Hot Encoding
 # TODO normalize data
+# TODO create test_complete.csv
 numColumns = len(df_train.columns)
 dataset = df_train.values
 
