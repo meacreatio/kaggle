@@ -9,5 +9,6 @@ skew = data.skew()
 print(skew)
 data.plot(kind='density', subplots=True, layout=(3,3), sharex=False)
 # scatter_matrix(data)
+# data.hist()
 pyplot.show()
 
