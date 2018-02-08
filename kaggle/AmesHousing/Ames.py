@@ -1,14 +1,11 @@
-from numpy import loadtxt
 import pandas as pd
-from xgboost import XGBClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-from kaggle.Utils.UtilsDataFrame import delete_column
-from kaggle.Utils.UtilsDataFrame import print_na_count
-from kaggle.Utils.UtilsDataFrame import remove_header
-
 from fancyimpute import MICE
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
+from xgboost import XGBClassifier
 
+from Utils.UtilsDataFrame import delete_column
+from Utils.UtilsDataFrame import remove_header
 
 df_train = pd.read_csv("train.csv", delimiter=",")
 delete_column(df_train, 'Id')
